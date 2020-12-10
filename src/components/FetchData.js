@@ -55,7 +55,7 @@ const FetchData = () => {
 
        // fetch the news 
 
-       const news = await fetch('https://content.guardianapis.com/search?q=%22coronavirus%22&tag=politics/politics&from-date=2014-01-01&api-key=9b549b4d-9451-47fb-aed2-a99a8f8c0562')
+       const news = await fetch('https://content.guardianapis.com/search?q=%22coronavirus%22&api-key=9b549b4d-9451-47fb-aed2-a99a8f8c0562')
        const newsJson = await news.json()
        const articles = newsJson.response.results
        
